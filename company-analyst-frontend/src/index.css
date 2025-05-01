@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* ПСБ Branding Colors */
+  --psb-primary-blue: #2c2d84;
+  --psb-accent-orange: #ea5617;
+  --psb-secondary-gray: #E5E7EB;
+  --psb-footer-gray: #3e3e59;
+  --psb-white: #FFFFFF;
+
+  --psb-primary-blue: #2c2d84;
+  --psb-accent-orange: #ea5617;
+  --psb-secondary-gray: #E5E7EB;
+  --psb-footer-gray: #3e3e59;
+  --psb-white: #FFFFFF;
+  --primary: var(--psb-primary-blue);
+  --accent: var(--psb-accent-orange);
+  --primary-foreground: var(--psb-white);
+  --muted-foreground: var(--psb-footer-gray);
+  --secondary: var(--psb-secondary-gray);
+  --background: var(--psb-white);
+  --border: var(--psb-secondary-gray);
+  --radius: 0.5rem;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+}
+
+/* Custom Gradient for Buttons and Header */
+.bg-psb-gradient {
+  background: linear-gradient(to right, var(--psb-primary-blue), var(--psb-footer-gray));
+}
